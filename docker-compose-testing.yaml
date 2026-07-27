@@ -1,0 +1,9 @@
+services:
+  frontend:
+    container_name: sigmadojo-frontend-testing
+    build:
+      context: .
+    ports:
+      - "3000:80"
+    environment:
+      VITE_BACKEND_URL: http://localhost:8000
